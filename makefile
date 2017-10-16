@@ -4,9 +4,9 @@ all: list.o main.c
 list.o: list.c list.h
 	gcc -c list.c list.h
 
-run: all
-	./list
-
 clean:
 	rm list.o
 	rm list.h.gch
+
+run: all
+	./list
